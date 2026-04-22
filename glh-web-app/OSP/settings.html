@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenfield Local Hub Settings</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style> html { overflow: hidden; } </style> <!-- page specific styling -->
+</head> 
+
+<!-- -----------------------NAVBAR----------------------- -->
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogo.jpg" alt="Greenfield Logo">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><b><a href="index.html">Home</a></b></li>
+      <li><b><a href="stock.html">Stock</a></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><i><a href="settings.html">Settings</a></i></b></li>
+      <li class="symbol">
+        <a href="login.html">
+          <img src="assets/logo/AccountLogo.jpg" alt="Account Logo">
+          <span>Log in</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+
+  <main>
+
+    <div class="account-container" style="margin-top: 50px;">
+
+      <div class="account-text">
+        <h1>Settings</h1>
+        <p>Here at Greenfield Local Hub, we consider those who have accessibility needs one of our top priorities. Personalise your experience on Greenfield Local Hub
+          by choosing from our colourblind options.</p>
+
+        <form id="settings-form" class="contact-form" style="box-shadow:none; padding:0; background:transparent;">
+
+          <b>Colour Vision Mode</b>
+
+          <div style="margin-bottom:18px; display:flex; flex-direction:wrap; gap:10px;">
+
+            <button type="button" onclick="setMode('normal')">Normal</button>
+            <button type="button" onclick="setMode('protanopia')">Protanopia</button>
+            <button type="button" onclick="setMode('deuteranopia')">Deuteranopia</button>
+            <button type="button" onclick="setMode('tritanopia')">Tritanopia</button>
+            <button type="button" onclick="setMode('achromatopsia')">Achromatopsia</button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="account-image">
+        <img src="assets/logo/SettingsLogo.jpg" alt="Settings Image">
+      </div>
+
+    </div>
+
+  </main>
+
+    <!-- -----------------------FOOTER----------------------- -->
+
+    <footer style="margin-top: 0px;"> 
+      <div class="newsletter-signup">
+        <div>
+          <h2 style="margin-bottom: 10px;">Subscribe to our Newsletter!</h2>
+          <p style= "max-width: 500px;">Get the latest updates on our products, events, and promotions.</p>
+      </div>
+
+    <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+        <div class="agree-terms">
+          <input type="checkbox" id="agree" required>
+          <label for="agree">I agree to receive promotional emails from Greenfield Local Hub.</label>
+        </div>
+      </form>
+
+      <div class="footer-links">
+        <p><b><a href="index.html">Home</a></b></p>
+        <p><b><a href="stock.html">Stock</a></b></p>
+        <p><b><a href="information.html">Information</a></b></p>
+        <p><b><a href="contact.html">Contact</a></b></p>
+        <p><b><a href="settings.html">Settings</a></b></p>
+        <p><b><a href="account.html">Account</a></b></p>
+      </div>
+
+      <div class="social-media">
+        <img src="assets/logo/FacebookLogo.jpg" alt="Facebook Logo">
+        <img src="assets/logo/InstagramLogo.jpg" alt="Instagram Logo">
+        <img src="assets/logo/XLogo.jpg" alt="X 'Formerly Twitter' Logo">
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- unsure if needed, will keep anyway -->
+<html lang="en">
+
+<!-- -----------------------HEAD----------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>Greenfield Local Hub</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    body { background-image: url('assets/background/IndexBackground.jpg'); }
+    .navbar { background-color: rgba(0, 0, 0, 0); }
+    .nav-links a { color: white; }
+    .slogan, .title-section, .text-section { text-shadow: black 1px 1px 25px; opacity: 0; animation: fadeIn 1s forwards; }
+  </style> <!-- page specific styling -->
+
+
+</head>
+
+<!-- -----------------------BODY----------------------- -->
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogoTransparentWhite.jpg" alt="Greenfield Long Transparent White Logo"></a>
+      </div>
+
+    <ul class="nav-links">
+      <li><b><i><a href="index.html">Home</a></i></b></li> <!-- current page -->
+      <li><b><a href="stock.html">Stock</a></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><a href="settings.html">Settings</a></b></li>
+      <li class="symbol">
+        <a href="login.html">
+          <img src="assets/logo/AccountLogoAlt.jpg" alt="Account Logo">
+          <span>Log in</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+
+  <main> 
+  
+    <div class="welcome">
+      <p class="slogan">Locally sourced, community enforced.</p>
+      <h1 class="title-section">Greenfield Local Hub</h1>
+      <h2 class="text-section">Greenfield Local Hub has one main objective; we aim to support and display the promising and honest careers and 
+      community that have been established by our local farmers in our small region. Our many products are now available for purchase through our website, 
+      including fresh fruit, vegatables, snacks, meat and dairy products, and all can be found at our in person farmers' cooperative. Search for more 
+      information on our official site using the navigation bar!</h2>
+    </div>
+
+  </main>
+
+  <!-- -----------------------FOOTER----------------------- -->
+
+  <footer style="margin-top: 375px;"> 
+    <div class="newsletter-signup">
+      <div>
+        <h2 style="margin-bottom: 10px;">Subscribe to our Newsletter!</h2>
+        <p style= "max-width: 500px;">Get the latest updates on our products, events, and promotions.</p>
+    </div>
+
+  <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+      <div class="agree-terms">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to receive promotional emails from Greenfield Local Hub.</label>
+      </div>
+    </form>
+
+    <div class="footer-links">
+      <p><b><a href="index.html">Home</a></b></p>
+      <p><b><a href="stock.html">Stock</a></b></p>
+      <p><b><a href="information.html">Information</a></b></p>
+      <p><b><a href="contact.html">Contact</a></b></p>
+      <p><b><a href="settings.html">Settings</a></b></p>
+      <p><b><a href="account.html">Account</a></b></p>
+    </div>
+
+    <div class="social-media">
+      <img src="assets/logo/FacebookLogo.jpg" alt="Facebook Logo">
+      <img src="assets/logo/InstagramLogo.jpg" alt="Instagram Logo">
+      <img src="assets/logo/XLogo.jpg" alt="X 'Formerly Twitter' Logo">
+    </div>
+  </footer>
+  <p style="background-color: rgb(248, 249, 251); margin-top: 0px; padding-bottom: 30px; text-align: center; font-family: 'Bahnschrift', 'Segoe UI', sans-serif;">&copy; 2026 Greenfield Local Hub. All rights reserved.</p>
+  <script src="script.js"></script>
+</body>
+
+</html>

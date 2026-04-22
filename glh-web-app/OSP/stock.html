@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- -----------------------HEAD----------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>Greenfield Local Hub Stock</title>
+  <link rel="stylesheet" href="style.css"> <!-- page specific styling -->
+
+  <style>
+    html { background-color: rgba(244, 239, 233); }
+    .category-subject, .product-card, .text-section { opacity: 0; animation: fadeIn 1s forwards; }
+    .search { display: block; margin: 20px auto; width: 500px; }
+  </style>
+</head>
+
+<!-- -----------------------BODY----------------------- -->
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogo.jpg" alt="Greenfield Long Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><b><a href="index.html">Home</a></b></li>
+      <li><b><i><a href="stock.html">Stock</a></i></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><a href="settings.html">Settings</a></b></li>
+      <li class="symbol">
+        <a href="login.html">
+          <img src="assets/logo/AccountLogo.jpg" alt="Account Logo">
+          <span>Log in</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+
+  <main>
+      
+    <div class="promotion">
+      <img src="assets/logo/PromotionalImage1.jpg" alt="Pork Pies">
+    </div>
+
+    <a class="checkout" href="checkout.html">Checkout</a>
+
+    <input type="search" placeholder="Search products..." class="search" onkeyup="searchProducts()" style="width: 670px;">
+
+    <section class="category">
+
+      <h2 class="category-subject" style="background-color:rgb(255, 255, 255);">Fruits</h2>
+      
+      <div class="options">
+
+          <div class="product-card">
+            <img src="assets/item/Apple.jpg" alt="Apple">
+            <p>Apples (6-pack)</p>
+            <p class="price">
+              <span class="old-price">£1.99</span>
+              <span class="new-price">£1.49</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Orange.jpg" alt="Orange">
+            <p>Oranges (6-pack)</p>
+            <p class="price">£1.69</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Pear.jpg" alt="Pear">
+            <p>Pears (4-pack)</p>
+            <p class="price">£2.19</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Banana.jpg" alt="Banana">
+            <p>Bananas (6-pack)</p>
+            <p class="price">£1.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Watermelon.jpg" alt="Watermelon">
+            <p>Watermelon</p>
+            <p class="price">£3.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Blueberries.jpg" alt="Blueberries">
+            <p>Blueberries (220g)</p>
+            <p class="price">
+              <span class="old-price">£2.99</span>
+              <span class="new-price">£1.99</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Grape.jpg" alt="Grapes">
+            <p>Grapes (500g)</p>
+            <p class="price">£2.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Kiwis.jpg" alt="Kiwi">
+            <p>Kiwis (3-pack)</p>
+            <p class="price">£1.69</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Mango.jpg" alt="Mango">
+            <p>Mango (3-pack)</p>
+            <p class="price">£3.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Strawberry.jpg" alt="Strawberries">
+            <p>Strawberries (250g)</p>
+            <p class="price">
+              <span class="old-price">£2.49</span>
+              <span class="new-price">£1.99</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Peaches.jpg" alt="Peach">
+            <p>Peaches (2-pack)</p>
+            <p class="price">
+              <span class="old-price">£4.49</span>
+              <span class="new-price">£3.79</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Pineapple.jpg" alt="Pineapple">
+            <p>Pineapples (2-Pack)</p>
+            <p class="price">£3.49</p> 
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+      </div>
+
+    </section>
+
+    <!-- -----------------------VEGETABLES----------------------- -->
+
+    <section class="category">
+
+      <h2 class="category-subject" style="background-color:rgb(255, 255, 255);">Vegetables</h2>
+      
+      <div class="options">
+
+          <div class="product-card">
+            <img src="assets/item/Carrot.jpg" alt="Carrots">
+            <p>Carrots (8-pack)</p>
+            <p class="price">£1.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Onion.jpg" alt="Onions">
+            <p>Onions (3-pack)</p>
+            <p class="price">£1.99</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Potatoes.jpg" alt="Potato">
+            <p>Potatoes (12-pack)</p>
+            <p class="price">£4.99</p><button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Broccoli.jpg" alt="Broccoli">
+            <p>Broccoli (3-pack)</p>
+            <p class="price">£2.19</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Lettuce.jpg" alt="Lettuce">
+            <p>Lettuce</p>
+            <p class="price">£1.59</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Cabbage.jpg" alt="Cabbage">
+            <p>Cabbage</p>
+            <p class="price">
+              <span class="old-price">£2.49</span>
+              <span class="new-price">£1.79</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Tomato.jpg" alt="Tomato">
+            <p>Tomatoes (4-Pack)</p>
+            <p class="price">£2.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Cauliflower.jpg" alt="Cauliflower">
+            <p>Cauliflower</p>
+            <p class="price">£2.19</p>
+            <button class="basket-add">Add to Basket</button>  
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Spinach.jpg" alt="Spinach">
+            <p>Spinach (250g)</p>
+            <p class="price">£1.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Pepper.jpg" alt="Peppers">
+            <p>Bell Peppers (3-Pack)</p>
+            <p class="price">£2.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Sprouts.jpg" alt="Sprouts">
+            <p>Sprouts (30-Pack)</p>
+            <p class="price">£1.99</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Parsnip.jpg" alt="Parsnip">
+            <p>Parsnips (8-Pack)</p>
+            <p class="price">£1.99</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+      </div>
+
+    </section>
+
+    <!-- -----------------------MEAT----------------------- -->
+
+    <section class="category">
+
+      <h2 class="category-subject" style="background-color:rgb(255, 255, 255);">Meat</h2>
+      
+      <div class="options">
+          
+          <div class="product-card">
+            <img src="assets/item/PorkPie.jpg" alt="Pork Pies">
+            <p>Pork Pies (6-pack)</p>
+            <p class="price">£2.19</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/ScotchEgg.jpg" alt="Scotch Eggs">
+            <p>Scotch Eggs (2 pack)</p>
+            <p class="price">£2.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/MincePie.jpg" alt="Mince Pie">
+            <p>Mince Pie (2 pack)</p>
+            <p class="price">£3.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Chicken.jpg" alt="Chicken">
+            <p>Chicken Breasts (6-pcs)</p>
+            <p class="price">
+              <span class="old-price">£7.59</span>
+              <span class="new-price">£5.79</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Beef.jpg" alt="Beef">
+            <p>Ground Beef (500g)</p>
+            <p class="price">£4.99</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Pork.jpg" alt="Pork"> 
+            <p>Pork (500g)</p>
+            <p class="price">£4.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+          
+          <div class="product-card">
+            <img src="assets/item/Skewer.jpg" alt="Chicken">
+            <p>Skewers (4-pack)</p>
+            <p class="price">£4.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Sausage.jpg" alt="Sausage">
+            <p>Sausages (12-pack)</p>
+            <p class="price">
+              <span class="old-price">£7.99</span>
+              <span class="new-price">£5.99</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Burger.jpg" alt="Burger">
+            <p>Burger Patties (8-pack)</p>
+            <p class="price">£7.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Chorizo.jpg" alt="Chorizo">
+            <p>Chorizo</p>
+            <p class="price">£3.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Lamb.jpg" alt="Lamb Shank">
+            <p>Lamb Shank</p>
+            <p class="price">£8.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/BaconStrips.jpg" alt="Bacon">
+            <p>Bacon (8-pack)</p>
+            <p class="price">
+              <span class="old-price">£3.49</span>
+              <span class="new-price">£2.79</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+      </div>
+
+    </section>
+
+    <!-- -----------------------ANIMAL PRODUCTS----------------------- -->
+
+    <section class="category">
+
+      <h2 class="category-subject" style="background-color:rgb(255, 255, 255);">Dairy</h2>
+      
+      <div class="options">
+          
+          <div class="product-card">
+            <img src="assets/item/Cheese.jpg" alt="Cheese">
+            <p>Cheese Block</p>
+            <p class="price">£4.79</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Cream.jpg" alt="Cream">
+            <p>Cream (300ml)</p>
+            <p class="price">£2.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Milk.jpg" alt="Milk">
+            <p>Milk (4 litres)</p>
+            <p class="price">
+              <span class="old-price">£3.19</span>
+              <span class="new-price">£2.49</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Butter.jpg" alt="Butter">
+            <p>Butter (Tub)</p>
+            <p class="price">
+              <span class="old-price">£2.99</span>
+              <span class="new-price">£1.99</span>
+              <span class="on-sale">SALE</span>
+            </p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Yogurt.jpg" alt="Yogurt">
+            <p>Yogurt</p>
+            <p class="price">£1.49</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/item/Custard.jpg" alt="Custard"> 
+            <p>Custard (Tub)</p>
+            <p class="price">£2.19</p>
+            <button class="basket-add">Add to Basket</button>
+          </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <!-- -----------------------FOOTER----------------------- -->
+
+  <footer style="margin-top: 50px;">
+    <div class="newsletter-signup">
+      <div>
+        <h2 style="margin-bottom: 10px;">Subscribe to our Newsletter!</h2>
+        <p style= "max-width: 500px;">Get the latest updates on our products, events, and promotions.</p>
+    </div>
+
+    <form class="newsletter-form" style="margin-top: 10px;">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="search-submit">Subscribe</button>
+
+      <div class="agree-terms">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to receive promotional emails from Greenfield Local Hub.</label>
+      </div>
+    </form>
+
+    <div class="footer-links">
+      <p><b><a href="index.html">Home</a></b></p>
+      <p><b><a href="stock.html">Stock</a></b></p>
+      <p><b><a href="information.html">Information</a></b></p>
+      <p><b><a href="contact.html">Contact</a></b></p>
+      <p><b><a href="settings.html">Settings</a></b></p>
+      <p><b><a href="account.html">Account</a></b></p>
+    </div>
+
+    <div class="social-media">
+      <img src="assets/logo/FacebookLogo.jpg" alt="Facebook Logo">
+      <img src="assets/logo/InstagramLogo.jpg" alt="Instagram Logo">
+      <img src="assets/logo/XLogo.jpg" alt="X 'Formerly Twitter' Logo">
+    </div>
+  </footer>
+  <p style="background-color: rgb(248, 249, 251); margin-top: 0px; padding-bottom: 30px; text-align: center; font-family: 'Bahnschrift', 'Segoe UI', sans-serif;">&copy; 2026 Greenfield Local Hub. All rights reserved.</p>
+
+  <script>
+    function searchProducts() {
+      var input = document.querySelector(".search").value.toLowerCase();
+      var products = document.querySelectorAll(".product-card");
+
+      for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+        var name = product.querySelector("p").textContent.toLowerCase();
+
+        if (name.indexOf(input) !== -1) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      }
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- -----------------------HEAD----------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>Log In to Greenfield Local Hub</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { background-image: url('assets/background/LoginSignupBackground.jpg'); overflow:hidden; }
+    .navbar { background-color: rgba(244, 239, 233, 0); }
+    .nav-links a { color: rgb(255, 255, 255); }
+  </style> <!-- page specific styling -->
+
+</head>
+
+<!-- -----------------------BODY----------------------- -->
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogoTransparentWhite.jpg" alt="Greenfield Long Transparent White Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><b><a href="index.html">Home</a></b></li>
+      <li><b><a href="stock.html">Stock</a></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><a href="settings.html">Settings</a></b></li>
+      <li class="symbol">
+        <a href="sign-up.html">
+          <img src="assets/logo/AccountLogoAlt.jpg" alt="Account Logo">
+          <span><i>Sign Up</i></span> <!-- current page -->
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+    
+  <main> 
+
+    <div class="form-page" style="margin-top: 160px;">
+      
+      <div class="two-part-box">
+        <form id="login-form" class="box-left">
+
+          <h2 style="font-size:30px;">Greenfield Local Hub</h2>
+          <p>Enter your details below.</p>
+          <label>Email</label>
+          <input id="email" class="login-input" type="text" placeholder="Enter email" required> <!-- user inputs their email, rejected if email doesnt exist or not signed up-->
+          <label>Password</label>
+          <input id="password" class="login-input" type="password" placeholder="Enter password" required> <!-- user inputs correct password, rejected if wrong-->
+
+          <button class="login-button" type="submit">Log In</button>
+
+          <p>Haven't got an account? <a href="sign-up.html">Create an account</a></p> <!-- intuitive design to allow users to sign up if they dont have an account -->
+        </form>
+
+        <div class="box-right">
+          <img src="assets/section/LoginImage.jpg" alt="Login Image" class="side-image"> <!-- design, makes it look pleasant and welcoming-->
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <script src="script.js"></script> <!-- java script connection-->
+
+</body>
+
+</html>

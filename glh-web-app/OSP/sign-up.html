@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- -----------------------HEAD----------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>Sign In to Greenfield Local Hub</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { background-image: url('assets/background/LoginSignupBackground.jpg'); overflow:hidden; }
+    .navbar { background-color: rgba(0, 0, 0, 0); }
+    .nav-links a { color: white; }
+  </style>
+
+</head>
+
+<!-- -----------------------BODY----------------------- -->
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogoTransparentWhite.jpg" alt="Greenfield Long Transparent White Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><b><a href="index.html">Home</a></b></li>
+      <li><b><a href="stock.html">Stock</a></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><a href="settings.html">Settings</a></b></li>
+      <li class="symbol">
+        <a href="login.html">
+          <img src="assets/logo/AccountLogoAlt.jpg" alt="Account Logo"> 
+          <span><i>Log in</i></span> <!-- current page -->
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+
+  <main>
+    <div class="form-page">
+      <div class="two-part-box">
+        
+        <form id="signup-form" class="box-left">
+
+          <h2 style="font-size:30px;">Greenfield Local Hub</h2>
+          <p>Start creating your account.</p>
+
+          <div class="login-form">
+            <label>Create a Username</label>
+            <input id="username" class="login-input" type="text" placeholder="Enter desired username" required>
+            <label>Email</label>
+            <input id="email" class="login-input" type="email" placeholder="Enter email" required>
+            <label>Password</label>
+            <input id="password" class="login-input" type="password" placeholder="Enter password" required>
+            <label>Confirm Password</label>
+            <input id="confirm" class="login-input" type="password" placeholder="Confirm password" required>
+            <button class="login-button" type="submit">Sign Up</button>
+            <p>Have an account? <a href="login.html"> Log In</a></p>
+          </div>
+
+        </form>
+
+        <div class="box-right">
+          <img src="assets/section/SignupImage.jpg" alt="Sign up Image" class="side-image">
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

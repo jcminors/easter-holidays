@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- -----------------------HEAD----------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <title>Greenfield Local Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head> <!-- no page specific styling -->
+
+<!-- -----------------------BODY----------------------- -->
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo/GreenfieldLongLogo.jpg" alt="Greenfield Long Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><b><i><a href="index.html">Home</a></i></b></li>
+      <li><b><a href="stock.html">Stock</a></b></li>
+      <li><b><a href="information.html">Information</a></b></li>
+      <li><b><a href="contact.html">Contact</a></b></li>
+      <li><b><a href="settings.html">Settings</a></b></li>
+      <li class="symbol">
+        <a href="index.html">
+          <img src="assets/logo/AccountLogo.jpg" alt="Account Logo">
+          <span>Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- -----------------------MAIN----------------------- -->
+
+  <main>
+    <div class="user-section">
+      <img src="assets/logo/AccountLogo.jpg" alt="User Image" class="user-image">
+      <p style="font-size: 80px; font-weight: bold; color: darkolivegreen;"><span id="username"></span>'s Dashboard</p>
+    </div>
+
+    <div class="account-container">
+      <div class="account-text">
+        <h1>Your Account</h1>
+        <p>
+        Welcome to your personal dashboard! Please feel free to get in touch with us using the contact form if you have any problems - if you forgot your password, username, email and more. All you need
+        is proof of ownership of the account to ensure customer safety.</p>
+        <p> 
+        If you would like to delete your account, you can do so by getting in contact with us using our contact form. If you want to request a refund, change an order, you can do all of that here too,
+        but please consider that some changes you would like to make to concurrent orders depends on if the order has already been shipped and is in transit with one of our drivers, meaning you may
+        not be able to refund or edit the order.</p>
+      </div>
+
+      <div class="account-image" style="width:20%">
+        <img src="assets/logo/Order.jpg" alt="Order Logo">
+      </div>
+    </div>
+
+    <div class="account-container">
+      
+      <div class="account-image">
+        <img src="assets/logo/LoyaltyPoint.jpg" alt="Farmers talking together"> 
+      </div>
+      
+      <div class="account-text">
+        <h1>Loyalty Scheme</h1>
+        <p>
+        As part of our loyalty scheme, we provide special offers for customers who are loyal to Greefield Local Hub. We appreciate our customers
+        and we put your experience at the forefront of our innovation. Each order grants you a set amount of loyalty points equal to 5% of your total spend on 
+        each order.
+        <p>
+        You will accumulate more loyalty points as you place orders; you can use these points to get discounts at your next checkout, or whenever you decide to use them.</p>
+        <h2>Your Loyalty Points: <span id="points">0</span></h2>
+      </div>
+    </div>
+
+    <div class="account-container">
+      <div class="account-text">
+        <h1>Order History</h1>
+        <p>
+        Using the button below, you can view the orders that you have made with us at Greenfield Local Hub, including the price and how many loyalty points you gained
+        from our order.
+        <p>
+        You can request to cancel an order before we notify you it has been sent off and recieve a full refund. You can also choose to remove items before your order is shipped
+        and you will be refunded the cost of the item(s). </p>
+        <p>
+        After an order is shipped, the shipping cost will not be refundable and you will not be able edit your order.</p>
+
+        <button><a href="Orders.html"></a>View Order History</button>
+      </div>
+            
+      <div class="account-image">
+        <img src="assets/logo/DeliveryVan.jpg" alt="Farmers talking together"> 
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- -----------------------FOOTER----------------------- -->
+
+  <footer style="margin-top: 50px;">
+    <div class="newsletter-signup">
+      <div>
+        <h2 style="margin-bottom: 10px;">Subscribe to our Newsletter!</h2>
+        <p style= "max-width: 500px;">Get the latest updates on our products, events, and promotions.</p>
+    </div>
+
+  <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+      <div class="agree-terms">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to receive promotional emails from Greenfield Local Hub.</label>
+      </div>
+    </form>
+
+    <div class="footer-links">
+      <p><b><a href="index.html">Home</a></b></p>
+      <p><b><a href="stock.html">Stock</a></b></p>
+      <p><b><a href="information.html">Information</a></b></p>
+      <p><b><a href="contact.html">Contact</a></b></p>
+      <p><b><a href="settings.html">Settings</a></b></p>
+      <p><b><a href="account.html">Account</a></b></p>
+    </div>
+
+    <div class="social-media">
+      <img src="assets/logo/FacebookLogo.jpg" alt="Facebook Logo">
+      <img src="assets/logo/InstagramLogo.jpg" alt="Instagram Logo">
+      <img src="assets/logo/XLogo.jpg" alt="X 'Formerly Twitter' Logo">
+    </div>
+  </footer>
+  <p style="background-color: rgb(248, 249, 251); margin-top: 0px; padding-bottom: 30px; text-align: center; font-family: 'Bahnschrift', 'Segoe UI', sans-serif;">&copy; 2026 Greenfield Local Hub. All rights reserved.</p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
